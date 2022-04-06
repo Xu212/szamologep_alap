@@ -10,6 +10,16 @@ function init(){
                 <br />
                 <button id="egyenlo">=</button>
                 <button id="torles">C</button> */
+    document.querySelector(".szamok").innerHTML="<button id='nulla'>0</button>"+
+                                                "<button id='egy'>1</button>"+
+                                                "<button id='ketto'>2</button>"+
+                                                "<button id='harom'>3</button>"+
+                                                "<button id='negy'>4</button>"+
+                                                "<button id='ot'>5</button>"+
+                                                "<button id='hat'>6</button>"+
+                                                "<button id='het'>7</button>"+
+                                                "<button id='nyolc'>8</button>"+
+                                                "<button id='kilenc'>9</button>"
     document.getElementById("osszeadas").addEventListener("click", elemszerzes);
     document.getElementById("kivonas").addEventListener("click", elemszerzes);
     document.getElementById("szorzas").addEventListener("click", elemszerzes);
