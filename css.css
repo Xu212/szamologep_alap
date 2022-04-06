@@ -23,10 +23,12 @@ article {
     padding: 5px;
 }
 .szamok {
-   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .szamok button {
-    
+    flex: 0 0 33%;
 }
 .muvjelek {
     grid-area: muv;
