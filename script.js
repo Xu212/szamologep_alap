@@ -16,6 +16,7 @@ function init(){
     document.getElementById("osztas").addEventListener("click", elemszerzes);
     document.getElementById("torles").addEventListener("click", clearing);
     document.getElementById("egyenlo").addEventListener("click", egyenloseg)
+    document.getElementById(".").addEventListener("click", tizedes)
     document.get
     var szamoktomb = document.querySelectorAll(".szamok>button");
     for (let index = 0; index < szamoktomb.length; index++) {
@@ -44,16 +45,24 @@ function egyenloseg(){
     var szamok = muvelet.split(muvjel);
     var vegeredmeny;
     if(muvjel==="+"){
-        vegeredmeny = parseInt(szamok[0]) + parseInt(szamok[1]);
+        vegeredmeny = parseFloat(szamok[0]) + parseFloat(szamok[1]);
     }
     else if(muvjel==="-"){
-        vegeredmeny = parseInt(szamok[0]) - parseInt(szamok[1]);
+        vegeredmeny = parseFloat(szamok[0]) - parseFloat(szamok[1]);
     }
     else if(muvjel==="*"){
-        vegeredmeny = parseInt(szamok[0]) * parseInt(szamok[1]);
+        vegeredmeny = parseFloat(szamok[0]) * parseFloat(szamok[1]);
     }
     else if(muvjel==="/"){
-        vegeredmeny = parseInt(szamok[0]) / parseInt(szamok[1]);
+        vegeredmeny = parseFloat(szamok[0]) / parseFloat(szamok[1]);
     }
     document.querySelector(".eredmeny").innerHTML=" = "+vegeredmeny;
+}
+function tizedes(){
+    var pont = event.target.innerHTML;
+    if(document.querySelector(".kifejezes").innerHTML==""){
+        muvjel="";
+    }
+    muvelet+=pont
+    document.querySelector(".kifejezes").innerHTML=muvelet;
 }
