@@ -10,6 +10,8 @@ function init(){
                 <br />
                 <button id="egyenlo">=</button>
                 <button id="torles">C</button> */
+    document.querySelector("footer").innerHTML="Xu Jiyu";
+    document.querySelector("title").innerHTML="Xu Jiyu";
     document.querySelector(".szamok").innerHTML="<button id='nulla'>0</button>"+
                                                 "<button id='egy'>1</button>"+
                                                 "<button id='ketto'>2</button>"+
